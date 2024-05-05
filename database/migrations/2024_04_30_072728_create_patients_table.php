@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nik', 16)->unique();
             $table->string('kk', 16);
             $table->string('name');
-            $table->string('phone', 15);
+            $table->string('phone', 25);
             $table->string('email')->nullable();
             $table->enum('gender', ['male', 'female']);
             $table->string('birth_place');
@@ -36,7 +36,7 @@ return new class extends Migration
             $table->string('postal_code', 5);
             $table->string('marital_status');
             $table->string('relationship_name')->nullable();
-            $table->string('relationship_phone', 15)->nullable();
+            $table->string('relationship_phone', 25)->nullable();
             $table->timestamps();
         });
     }
