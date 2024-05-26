@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('sip');
             $table->enum('gender', ['male', 'female']);
             $table->date('birth_date');
-            $table->string('phone', 15);
+            $table->string('phone', 20);
             $table->string('email');
             $table->string('photo')->nullable();
             $table->string('address')->nullable();
